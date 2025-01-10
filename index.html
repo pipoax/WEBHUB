@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rincón Verde Food Corner</title>
+    <style>
+        :root {
+            --naranja: #F37520; /* RAL 2008 */
+            --verde: #1E5945;  /* RAL 2638 */
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: var(--verde);
+            color: white;
+            text-align: center;
+            padding: 0;
+        }
+        header img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem;
+        }
+        .brand-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .brand-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+        .brand-card a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .brand-card img {
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .brand-card h2 {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+            padding: 0 0.5rem;
+            color: var(--verde);
+        }
+        footer {
+            background-color: var(--naranja);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/Cabecera.jpg" alt="Rincón Verde Food Corner">
+    </header>
+    <div class="container">
+        <!-- Sappore di Casa -->
+        <div class="brand-card">
+            <a href="https://www.instagram.com/saporidicasa_coruna/" target="_blank">
+                <img src="images/sappore.jpg" alt="Sappore di Casa">
+                <h2>Sappore di Casa</h2>
+            </a>
+        </div>
+        <!-- Cactus -->
+        <div class="brand-card">
+            <a href="https://www.just-eat.es/restaurants-cactus-break-food-a-coruna/menu" target="_blank">
+                <img src="images/cactus.jpg" alt="Cactus">
+                <h2>Cactus</h2>
+            </a>
+        </div>
+        <!-- La Pepita -->
+        <div class="brand-card">
+            <a href="https://www.lapepitaburgerbar.com/nuestra-carta/" target="_blank">
+                <img src="images/pepita.jpg" alt="La Pepita">
+                <h2>La Pepita</h2>
+            </a>
+        </div>
+        <!-- Amasarte -->
+        <div class="brand-card">
+            <a href="https://amasartepanaderia.es/tienda/" target="_blank">
+                <img src="images/amasarte.jpg" alt="Amasarte">
+                <h2>Amasarte</h2>
+            </a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Rincón Verde Food Corner. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
